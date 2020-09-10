@@ -36,11 +36,16 @@
 
     &--light { color: $color-grey-light-1; }
     &--dark { color: $color-grey-dark-1; }
+
+    &--primary {
+        color: $color-primary;
+        text-transform: uppercase;
+    }
 }
 
 .btn {
     padding: 1.5rem;
-    font-size: 2rem;
+    font-size: 1.7rem;
     color: $color-grey-light-1;
     border: none;
     text-transform: uppercase;
