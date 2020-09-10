@@ -24,6 +24,11 @@ body {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 400; }
 
+.heading-1 {
+  font-size: 4.5rem;
+  line-height: 1;
+  color: #fff; }
+
 .heading-2 {
   font-size: 4rem;
   line-height: 1; }
@@ -56,6 +61,12 @@ body {
       background-color: #B28451; }
   .btn--home {
     grid-column: 1 / -1; }
+  .btn--head {
+    background-color: rgba(198, 153, 99, 0.93);
+    justify-self: start;
+    align-self: start; }
+    .btn--head:hover {
+      background-color: #B28451; }
 
 .mb-x-small {
   margin-bottom: 2rem; }
@@ -94,8 +105,48 @@ body {
     transform: translateY(-1.5rem); }
 
 .header {
-  background-color: #f9f7f6;
-  grid-column: full-start / col-end 6; }
+  background-color: #6D5D4B;
+  grid-column: full-start / col-end 6;
+  padding: 6rem;
+  padding-top: 4rem;
+  background-image: linear-gradient(rgba(16, 29, 44, 0.9), rgba(16, 29, 44, 0.9)), url(../img/hero.jpeg);
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  grid-template-rows: 1fr min-content minmax(6rem, min-content) 1fr;
+  grid-template-columns: minmax(min-content, max-content);
+  row-gap: 1.5rem;
+  justify-content: center; }
+
+.logo {
+  height: 3rem;
+  width: auto;
+  justify-self: center; }
+
+.seenon__text {
+  color: #aaa;
+  font-size: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  align-items: center;
+  column-gap: 2rem; }
+  .seenon__text::before, .seenon__text::after {
+    height: 1px;
+    width: auto;
+    content: "";
+    display: block;
+    background-color: currentColor; }
+
+.seenon__logo {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  align-items: center;
+  column-gap: 2rem; }
+  .seenon__logo img {
+    height: 2.5rem;
+    width: auto;
+    filter: brightness(70%); }
 
 .realtors {
   background-color: #54483A;

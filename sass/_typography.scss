@@ -5,7 +5,9 @@
 
 .heading-1 {
     @extend %heading;
-    
+    font-size: 4.5rem;
+    line-height: 1;
+    color: #fff;
 }
 
 .heading-2 {
@@ -52,6 +54,15 @@
 
     &--home {
         grid-column: 1 / -1;
+    }
+
+    &--head {
+
+        background-color: rgba($color-primary, .93);
+        justify-self: start;
+        align-self: start;
+
+        &:hover { background-color: $color-primary-dark; }
     }
 }
 
