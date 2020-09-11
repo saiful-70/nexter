@@ -49,8 +49,8 @@
         column-gap: 2rem;
 
         img {
+            display: block;
             height: 2.5rem;
-            width: auto;
             filter: brightness(70%);
         }
     }
