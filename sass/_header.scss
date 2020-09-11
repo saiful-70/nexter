@@ -7,6 +7,10 @@
     background-size: cover;
     background-position: center;
 
+    @media only screen and (max-width: $medium-bp) {
+        grid-column: 1 / -1;
+    }
+
     display: grid;
     grid-template-rows: 1fr min-content minmax(6rem, min-content) 1fr;
     grid-template-columns: minmax(min-content, max-content);
@@ -48,10 +52,22 @@
         align-items: center;
         column-gap: 2rem;
 
+        @media only screen and (max-width: $small-bp) {
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 1rem;
+            row-gap: 4rem;
+            
+            margin-bottom: 5rem;
+        } 
+
         img {
             display: block;
             height: 2.5rem;
             filter: brightness(70%);
         }
+
+        @media only screen and (max-width: $small-bp) {
+            height: 1.5rem;
+        } 
     }
 }
